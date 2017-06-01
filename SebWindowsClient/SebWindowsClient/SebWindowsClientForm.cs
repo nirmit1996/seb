@@ -183,9 +183,9 @@ namespace SebWindowsClient
             string es = string.Join(", ", args);
             Logger.AddInformation("OnLoad EventArgs: " + es, null, null);
 
-            if (args.Length > 1)
+            if (args.Length > 2)
             {
-                if (!LoadFile(args[1])) {
+                if (!LoadFile(args[2])) {
                     Logger.AddError("LoadFile() in OnLoad() failed, exiting SEB!", null, null);
                     ExitApplication();
                 }
