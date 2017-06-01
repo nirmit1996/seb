@@ -69,11 +69,11 @@ namespace SebWindowsClient
         void this_StartupNextInstance(object sender, StartupNextInstanceEventArgs e)
         {
             SebWindowsClientForm form = MainForm as SebWindowsClientForm; //My derived form type
-            if (e.CommandLine.Count() > 1)
+            if (e.CommandLine.Count() > 2)
             {
                 string es = string.Join(", ", e.CommandLine);
                 Logger.AddInformation("StartupNextInstanceEventArgs: " + es);
-                if (!form.LoadFile(e.CommandLine[1]))
+                if (!form.LoadFile(e.CommandLine[2]))
                 {
                     Logger.AddError("LoadFile() from StartupNextInstanceEvent failed!", null, null);
                 }

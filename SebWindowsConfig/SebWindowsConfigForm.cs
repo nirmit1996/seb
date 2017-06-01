@@ -58,9 +58,9 @@ namespace SebWindowsConfig
             string es = string.Join(", ", args);
             Logger.AddInformation("OnLoad EventArgs: " + es, null, null);
 
-            if (args.Length > 1)
+            if (args.Length > 2)
             {
-                LoadConfigurationFileIntoEditor(args[1]);
+                LoadConfigurationFileIntoEditor(args[2]);
                 // Update Browser Exam Key
                 lastBrowserExamKey = SEBProtectionController.ComputeBrowserExamKey();
                 lastSettingsPassword = textBoxSettingsPassword.Text;
