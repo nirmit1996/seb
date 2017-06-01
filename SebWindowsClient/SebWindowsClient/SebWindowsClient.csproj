@@ -53,7 +53,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <ApplicationIcon>SEBicon.ico</ApplicationIcon>
+    <ApplicationIcon>mettl.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -342,6 +342,7 @@
     <None Include="Resources\AboutSEB.png" />
     <None Include="Resources\battery.png" />
     <None Include="Resources\quit.png" />
+    <Content Include="mettl.ico" />
     <Content Include="Resources\reload.png" />
     <Content Include="Resources\restartExam.png" />
     <Content Include="Resources\loading.gif" />

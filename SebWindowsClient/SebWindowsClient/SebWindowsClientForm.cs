@@ -201,7 +201,7 @@ namespace SebWindowsClient
                 if (SebWindowsClientMain.clientSettingsSet == false)
                 {
                     // We need to set the client settings first
-                    if (SEBClientInfo.SetSebClientConfiguration())
+                    if (SEBClientInfo.SetSebClientConfiguration("https://tests.mettl.com"))
                     {
                         SebWindowsClientMain.clientSettingsSet = true;
                         Logger.AddError("SEB client configuration set in LoadFile(URI).", null, null);

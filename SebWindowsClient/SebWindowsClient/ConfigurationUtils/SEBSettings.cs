@@ -1493,7 +1493,7 @@ namespace SebWindowsClient.ConfigurationUtils
         /// Decrypt, deserialize and store new settings as current SEB settings 
         /// </summary>
         /// ----------------------------------------------------------------------------------------
-        public static bool StoreDecryptedSebClientSettings(byte [] sebSettings)
+        public static bool StoreDecryptedSebClientSettings(byte [] sebSettings,String mettlUrl)
         {
             DictObj settingsDict = null;
             // If we were passed empty settings, we skip decrypting and just use default settings
@@ -1523,6 +1523,12 @@ namespace SebWindowsClient.ConfigurationUtils
                 }
             }
             // Store the new settings or use defaults if new settings were empty
+            if(mettlUrl!=null)
+                {
+                Logger.AddInformation("updating seb Url");
+                settingsDict.Remove(SEBSettings.KeyStartURL);
+                settingsDict.Add(SEBSettings.KeyStartURL, mettlUrl);
+            }
             StoreSebClientSettings(settingsDict);
             return true;
         }

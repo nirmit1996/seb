@@ -76,6 +76,12 @@
         "Entry"
         {
         "MsmKey" = "8:_14E365B93306ECAEFEDB3FCDD39F5BD1"
+        "OwnerKey" = "8:_1E7860D4818046008295C56DDC9A166D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_14E365B93306ECAEFEDB3FCDD39F5BD1"
         "OwnerKey" = "8:_BA51684AF5B244E6ADC28D16BDBE01A4"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -83,12 +89,6 @@
         {
         "MsmKey" = "8:_14E365B93306ECAEFEDB3FCDD39F5BD1"
         "OwnerKey" = "8:_3A5D80E387D09051A8745529FF996978"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_14E365B93306ECAEFEDB3FCDD39F5BD1"
-        "OwnerKey" = "8:_1E7860D4818046008295C56DDC9A166D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -748,12 +748,6 @@
         "Entry"
         {
         "MsmKey" = "8:_E20A3F87D26B6188A4E12B2887AD3C74"
-        "OwnerKey" = "8:_C72496C8B83A459DAFEE49AC7C2D9152"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_E20A3F87D26B6188A4E12B2887AD3C74"
         "OwnerKey" = "8:_4CFC273ACF6F45E2813A808118B91517"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -761,6 +755,12 @@
         {
         "MsmKey" = "8:_E20A3F87D26B6188A4E12B2887AD3C74"
         "OwnerKey" = "8:_BA51684AF5B244E6ADC28D16BDBE01A4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E20A3F87D26B6188A4E12B2887AD3C74"
+        "OwnerKey" = "8:_C72496C8B83A459DAFEE49AC7C2D9152"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -778,6 +778,12 @@
         "Entry"
         {
         "MsmKey" = "8:_EA19ABF5382B4EFE883BEB03661F0624"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EA298C9812B74FE3A01ACCD363106FDA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -850,13 +856,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4CFC273ACF6F45E2813A808118B91517"
+        "OwnerKey" = "8:_BA51684AF5B244E6ADC28D16BDBE01A4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_482ACFB0BBBE4047BC55D630BA359424"
+        "OwnerKey" = "8:_61DF9029B454505798FC371E64D4C950"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9A239BD113AA40714BE5B6D2E8D89D22"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -892,24 +904,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BA51684AF5B244E6ADC28D16BDBE01A4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_61DF9029B454505798FC371E64D4C950"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9A239BD113AA40714BE5B6D2E8D89D22"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_14E365B93306ECAEFEDB3FCDD39F5BD1"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -928,7 +922,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E20A3F87D26B6188A4E12B2887AD3C74"
+        "OwnerKey" = "8:_8F8B90F916374555BC432832D99CEC8A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -940,7 +934,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8F8B90F916374555BC432832D99CEC8A"
+        "OwnerKey" = "8:_4CFC273ACF6F45E2813A808118B91517"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_E20A3F87D26B6188A4E12B2887AD3C74"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_482ACFB0BBBE4047BC55D630BA359424"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -961,6 +967,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -977,6 +999,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1130,7 +1160,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:IconLib, Version=0.73.6361.27088, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:IconLib, Version=0.73.6361.30886, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_0F2DF8FDCE41644A7A2D5BBC3B4926B3"
@@ -1201,7 +1231,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:MetroFramework, Version=1.3.6361.27088, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:MetroFramework, Version=1.3.6361.30886, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_14E365B93306ECAEFEDB3FCDD39F5BD1"
@@ -1592,7 +1622,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SafeExamBrowser, Version=2.1.6361.27091, Culture=neutral, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:SafeExamBrowser, Version=2.1.6361.30907, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_3A5D80E387D09051A8745529FF996978"
@@ -1943,7 +1973,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:IconLib, Version=0.73.6361.27088, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:IconLib, Version=0.73.6361.30886, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_61DF9029B454505798FC371E64D4C950"
@@ -2616,7 +2646,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SEBWindowsServiceContracts, Version=1.0.6361.27088, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:SEBWindowsServiceContracts, Version=1.0.6361.30886, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_9F6AAF246CED1F5A2EC4C519C3202E5E"
@@ -2787,7 +2817,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SebWindowsServiceWCF, Version=2.1.6361.27090, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:SebWindowsServiceWCF, Version=2.1.6361.30887, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_A7564415080D72021C22AD247B59FA35"
@@ -3278,7 +3308,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SEBWindowsServiceContracts, Version=1.0.6361.27088, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:SEBWindowsServiceContracts, Version=1.0.6361.30886, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_E20A3F87D26B6188A4E12B2887AD3C74"
@@ -3331,6 +3361,26 @@
             "TargetName" = "8:onload.js"
             "Tag" = "8:"
             "Folder" = "8:_9E9C5BDE39534403948386CBFB2537EE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EA298C9812B74FE3A01ACCD363106FDA"
+            {
+            "SourcePath" = "8:C:\\Backup\\Desktop\\mettl.ico"
+            "TargetName" = "8:mettl.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_D8F559CED48E4A2DB30B45E7BE3E97B8"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3998,7 +4048,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Mettl"
         "ProductCode" = "8:{7D93C685-5691-460E-A3AD-E415770654C8}"
-        "PackageCode" = "8:{FBBDB9C1-CD96-4151-903F-93DAEE2F3372}"
+        "PackageCode" = "8:{2B250988-DDFC-4307-85C9-5ED6AEF0EED2}"
         "UpgradeCode" = "8:{49DAC767-4EDB-474B-83AB-92BE7212E3E6}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

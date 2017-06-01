@@ -84,7 +84,7 @@ namespace SebWindowsClient
         {
             MainForm = SEBClientInfo.SebWindowsClientForm;
             string[] arguments = Environment.GetCommandLineArgs();
-            if (arguments.Count() == 2)
+            if (arguments.Count() <= 2)
             {
                 var splashThread = new Thread(SebWindowsClientMain.StartSplash);
                 splashThread.Start();
@@ -360,7 +360,7 @@ namespace SebWindowsClient
             if (_loadingSebFile == false && clientSettingsSet == false)
             {
                 // Set SebClient configuration
-                if (!SEBClientInfo.SetSebClientConfiguration())
+                if (!SEBClientInfo.SetSebClientConfiguration(mettlUrl))
                 {
                     SEBMessageBox.Show(SEBUIStrings.ErrorCaption, SEBUIStrings.ErrorWhenOpeningSettingsFile, MessageBoxIcon.Error, MessageBoxButtons.OK);
                     Logger.AddError("Error when opening the file SebClientSettings.seb!", null, null);

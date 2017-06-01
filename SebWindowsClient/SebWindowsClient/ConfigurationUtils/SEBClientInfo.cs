@@ -216,10 +216,13 @@ namespace SebWindowsClient.ConfigurationUtils
          /// Sets user, host info, send-recv interval, recv timeout, Logger and read SebClient configuration.
         /// </summary>
         /// <returns></returns>
-        public static bool SetSebClientConfiguration()
+        public static bool SetSebClientConfiguration(String mettlUrl)
         {
-            string[] ar = Environment.GetCommandLineArgs();
-            mettl = SebWindowsClientMain.ProcessInput(ar[1]);
+            /*string[] ar = Environment.GetCommandLineArgs();
+            if (ar.Length == 2)
+                mettl = SebWindowsClientMain.ProcessInput(ar[1]);
+            else
+                mettl = "https://tests.mettl.com";*/
             bool setSebClientConfiguration = false;
 
            // Initialise socket properties
@@ -277,7 +280,7 @@ namespace SebWindowsClient.ConfigurationUtils
             //SebWindowsClient.ConfigurationUtils.SEBConfigFileManager.InitSEBConfigFileManager();
 
             // Store the decrypted configuration settings.
-            if (!SEBSettings.StoreDecryptedSebClientSettings(sebClientSettings))
+            if (!SEBSettings.StoreDecryptedSebClientSettings(sebClientSettings,mettlUrl))
                 return false;
 
             // Close the password entry form
@@ -452,8 +455,8 @@ namespace SebWindowsClient.ConfigurationUtils
                      xulRunnerConfig.seb_mainWindow_titlebar_enabled = false;
 
                  }
-                //xulRunnerConfig.seb_url = SEBClientInfo.getSebSetting(SEBSettings.KeyStartURL)[SEBSettings.KeyStartURL].ToString();
-                  xulRunnerConfig.seb_url = mettl;
+                xulRunnerConfig.seb_url = SEBClientInfo.getSebSetting(SEBSettings.KeyStartURL)[SEBSettings.KeyStartURL].ToString();
+                 
                  setXulRunnerConfiguration = true;
                  SEBXulRunnerSettings.XULRunnerConfigSerialize(xulRunnerConfig, XulRunnerConfigFile);
              }
