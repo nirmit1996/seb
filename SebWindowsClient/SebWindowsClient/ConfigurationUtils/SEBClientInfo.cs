@@ -12,40 +12,6 @@ using SebWindowsClient.CryptographyUtils;
 using System.Security.Cryptography.X509Certificates;
 using PlistCS;
 using System.Collections;
-//
-//  SEBClientInfo.cs
-//  SafeExamBrowser
-//
-//  Copyright (c) 2010-2017 Viktor Tomas, Dirk Bauer, Daniel R. Schneider, Pascal Wyss,
-//  ETH Zurich, Educational Development and Technology (LET),
-//  based on the original idea of Safe Exam Browser
-//  by Stefan Schneider, University of Giessen
-//  Project concept: Thomas Piendl, Daniel R. Schneider,
-//  Dirk Bauer, Kai Reuter, Tobias Halbherr, Karsten Burger, Marco Lehre,
-//  Brigitte Schmucki, Oliver Rahs. French localization: Nicolas Dunand
-//
-//  ``The contents of this file are subject to the Mozilla Public License
-//  Version 1.1 (the "License"); you may not use this file except in
-//  compliance with the License. You may obtain a copy of the License at
-//  http://www.mozilla.org/MPL/
-//
-//  Software distributed under the License is distributed on an "AS IS"
-//  basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the
-//  License for the specific language governing rights and limitations
-//  under the License.
-//
-//  The Original Code is Safe Exam Browser for Windows.
-//
-//  The Initial Developers of the Original Code are Viktor Tomas, 
-//  Dirk Bauer, Daniel R. Schneider, Pascal Wyss.
-//  Portions created by Viktor Tomas, Dirk Bauer, Daniel R. Schneider, Pascal Wyss
-//  are Copyright (c) 2010-2017 Viktor Tomas, Dirk Bauer, Daniel R. Schneider, 
-//  Pascal Wyss, ETH Zurich, Educational Development and Technology (LET), 
-//  based on the original idea of Safe Exam Browser
-//  by Stefan Schneider, University of Giessen. All Rights Reserved.
-//
-//  Contributor(s): ______________________________________.
-//
 
 namespace SebWindowsClient.ConfigurationUtils
 {
@@ -112,7 +78,7 @@ namespace SebWindowsClient.ConfigurationUtils
         private const string XUL_RUNNER_CONFIG = "config.json";
         public  const string XUL_RUNNER        = "xulrunner.exe";
         private const string XUL_RUNNER_INI    = "seb.ini";
- 
+        
         // Application path contains [MANUFACTURER]\[PRODUCT_NAME]
         // (see also "SebWindowsPackageSetup" Project in MS Visual Studio 10)
         public const string MANUFACTURER_LOCAL     = "SafeExamBrowser";
@@ -206,7 +172,7 @@ namespace SebWindowsClient.ConfigurationUtils
 
         public static float scaleFactor = 1;
         public static int appChooserHeight = 132;
-
+        public static string mettl = "";
         #endregion
 
 		#region Structures
@@ -252,7 +218,8 @@ namespace SebWindowsClient.ConfigurationUtils
         /// <returns></returns>
         public static bool SetSebClientConfiguration()
         {
-
+            string[] ar = Environment.GetCommandLineArgs();
+            mettl = SebWindowsClientMain.ProcessInput(ar[1]);
             bool setSebClientConfiguration = false;
 
            // Initialise socket properties
@@ -485,7 +452,8 @@ namespace SebWindowsClient.ConfigurationUtils
                      xulRunnerConfig.seb_mainWindow_titlebar_enabled = false;
 
                  }
-                 xulRunnerConfig.seb_url = SEBClientInfo.getSebSetting(SEBSettings.KeyStartURL)[SEBSettings.KeyStartURL].ToString();
+                //xulRunnerConfig.seb_url = SEBClientInfo.getSebSetting(SEBSettings.KeyStartURL)[SEBSettings.KeyStartURL].ToString();
+                  xulRunnerConfig.seb_url = mettl;
                  setXulRunnerConfiguration = true;
                  SEBXulRunnerSettings.XULRunnerConfigSerialize(xulRunnerConfig, XulRunnerConfigFile);
              }

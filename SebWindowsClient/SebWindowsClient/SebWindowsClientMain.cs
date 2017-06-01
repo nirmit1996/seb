@@ -171,13 +171,22 @@ namespace SebWindowsClient
         // member will be accessed by multiple threads. 
         private volatile static bool _loadingSebFile = false;
         public static bool clientSettingsSet { get; set; }
-
+        public static string mettlUrl="";
         public static SEBSplashScreen splash;
 
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         //[STAThread] //Do not use this, it breaks the ability to switch to a new desktop
+        
+        public static string ProcessInput(String str)
+        {
+            str=str.Replace("mettl1: ","");
+            return str;
+        }
+
+
+
         static void Main()
         {
             Application.EnableVisualStyles();
@@ -187,10 +196,15 @@ namespace SebWindowsClient
             Logger.InitLogger();
             Logger.AddInformation("---------- INITIALIZING SEB - STARTING SESSION -------------");
             Logger.AddInformation(" Arguments: " + String.Join(", ", arguments));
+            mettlUrl = "https://tests.mettl.com";
 
+            if(arguments.Length==2)
+            {
+                mettlUrl = ProcessInput(arguments[1]);
+            }
             try
             {
-                if (!InitSebSettings())
+                if (!InitSebSettings(mettlUrl))
                     return;
             }
             catch (Exception ex)
@@ -336,7 +350,7 @@ namespace SebWindowsClient
         /// </summary>
         /// <returns>true if succeed</returns>
         /// ----------------------------------------------------------------------------------------
-        public static bool InitSebSettings()
+        public static bool InitSebSettings(string mettlUrl)
         {
             Logger.AddInformation("Attempting to InitSebSettings");
             //SebWindowsClientForm.SetVisibility(true);
